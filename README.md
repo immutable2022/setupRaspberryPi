@@ -50,7 +50,7 @@ https://github.com/Und3rf10w/kali-anonsurf
 https://www.geeksforgeeks.org/how-to-setup-and-use-anonsurf-on-kali-linux/
 
 
-Anonsurf works also on DietPi. The screenshots won't be exactly the same as in the above tutorial and you won't get at UI tool to monitor the status. But you get the command line giving you all that information.
+Anonsurf works also on DietPi. What you get won't be exactly the same as in the screenshots of the above tutorial and you won't get at UI tool to monitor the status. But you get the command line giving you all that information.
 
 IMPORTANT: we have to get Anonsurf running right from boot so we don't have our IP address being leaked. For that edit the file:
 
@@ -65,6 +65,9 @@ You can also do this by following the steps on the Mate Desktop (if you don't kn
 Applications -> System Tools -> DietPi-Config -> AutoStart Options -> Custom script (background, no autologin)
 
 There you will be able to edit the custom.sh file
+
+Reboot your Raspberry Pi and check if Anonsurf is working by running "anonsurf myip". You should get an IP address which is different than your LAN IP address. You can also play with the command "anonsurf change" which will shift to another TOR exit node so you'll get a new IP Adddress.
+
 
 ## Add a couple of extensions to Firefox
 
@@ -83,10 +86,10 @@ Check also the Privacy and Security definitions of your Firefox installation suc
 
 ## Get a VPN
 
-If you are doing advanced things that might get into trouble ( for example denaial of service attacks is considered a crime in most jurisdictions) you will need to install a VPN. Here do your research and pick a paied one and you guessed it, normally the most secure tend to be the most expensive. Check as many reviews as possible before choosing one.
+If you are doing advanced things that might get into trouble ( for example denial of service attacks is considered a crime in most jurisdictions) you will need to install a VPN. Here do your research and pick a payed one and you guessed it, normally the most secure tend to be the most expensive. Check as many reviews as possible before choosing one.
 
 
-That's it. With this setup you'll have your minimal hacking setup on a Raspberry Pi. It may take a many hours to get into the final setup that suits your needs but take your time and make sure you do your research.
+That's it. With this setup we have a minimal hacking setup on a Raspberry Pi. It may take a many hours to get into the final setup that suits your needs but take your time and make sure you do your research.
 
 Again be carefull if you are just starting. Don't trust just the TOR network for anonymity. Entry and Exit nodes might still be monitored although unlikely that's also a possibility.
 
