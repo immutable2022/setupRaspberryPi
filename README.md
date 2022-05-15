@@ -60,7 +60,7 @@ and add the following line:
 
 anonsurf start
 
-You can also do this by following the steps on the Mate Desktop (if you don't know, you have to start as root and on the command line enter the command "startx":
+You can also do this by following the steps on the Mate Desktop - if you don't know, you have to start as root and on the command line enter the command "startx":
 
 Applications -> System Tools -> DietPi-Config -> AutoStart Options -> Custom script (background, no autologin)
 
