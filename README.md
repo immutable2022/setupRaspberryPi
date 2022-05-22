@@ -1,6 +1,6 @@
 # Setup Raspberry Pi
 
-Why would we want to setup a hacking minimalistic setup with a Raspberry Pi? Mainly because it's low powered and highly mobile. In addition if used exclusively for hacking purposes then your personal information won't be there. So the purpose of this guide is to provide the absolute minimum and safest environment for hacking. It will not suite every scenario but if it's mainly scripting it should do the job just fine.
+Why would we want a hacking minimalistic setup on a Raspberry Pi? Mainly because it's low powered and highly mobile. In addition if used exclusively for hacking purposes then your personal information won't be there. So the purpose of this guide is to provide the absolute minimum and safest environment for hacking. It will not suite every scenario but if it's mainly scripting it should do the job just fine.
 
 NOTE: during my setup I had to actually reinstall DietPi a bunch of times to get used to the options, navigation and also the sequence of steps. For example setting up the Network was a bit cumbersome. The most effective way I found was to start with network cable and when everything was ok, switch to Wi-fi.
 
