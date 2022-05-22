@@ -6,7 +6,7 @@ NOTE: during my setup I had to actually reinstall DietPi a bunch of times to get
 
 Also you might want first attempt to try and install Anonsurf before anything else since it's the only "non-standard" application that is required and since it takes control of your network through IP tables etc you might want to check how to install it first. This is indeed the core of this guide. Anonsurf is what will provide the most basic layer of security through TOR navigation.
 
-## Install DietPi on a clean SSD card
+## Install DietPi on a clean SD card
 
 DietPi allows you to customize what you want and we want a minimalistic installation. You can get the correct installation from their website: https://dietpi.com/
 
