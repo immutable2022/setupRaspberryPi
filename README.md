@@ -22,7 +22,7 @@ https://dietpi.com/docs/software/desktop/#firefox
 
 
 If you are not yet about deep diving into hacking you can simply add a TOR node and leave your RaspberryPi work 24/7 as a TOR node.
-https://dietpi.com/docs/software/distributed_projects/#tor-relay. We don't want to have this installed if we are going to actually perform hacking. For that we want to have only Anonsurf (and a VPN).
+https://dietpi.com/docs/software/distributed_projects/#tor-relay. We don't want to have this installed if we are going to actually perform hacking. For that we want to have only Anonsurf (and a VPN). However if you want your Rpi working as TOR node first read this information: https://blog.torproject.org/tips-running-exit-node/
 
 In a Raspberry Pi 3b+ this minimal setup works, but of course browsing should be done judisciously otherwise the resources will be depleted and our RPi 3b+ will soon stop responding. In addition we want this to be a minimalistic keeping anonimity as main goal so the less browsing we do the safer we are.
 
