@@ -43,12 +43,17 @@ that should get you going with java so you can write a piece of code and leave i
 
 ## Get Anonsurf
 
-Anonsurf comes originally with Parrot OS distribution but there's an available version that was prepared for running on Kali Linux. However we can also get it running on DietPi. Check the following resources
+Anonsurf comes originally with Parrot OS distribution but there's an available version that was prepared for running on Kali Linux. We can also get it running on DietPi. Check the following resources
 
 https://github.com/Und3rf10w/kali-anonsurf
 
 https://www.geeksforgeeks.org/how-to-setup-and-use-anonsurf-on-kali-linux/
 
+What Anonsurf does is route all traffic through TOR network. But TOR is no guarantee of anonymity. Have also a look at the following resource:
+
+https://restoreprivacy.com/tor/
+
+But having Anonsurf is better than nothing and it's a free tool.
 
 Anonsurf works also on DietPi. What you get won't be exactly the same as in the screenshots of the above tutorial and you won't get an UI tool to monitor the network status. But you get the command line giving you all that information.
 
@@ -95,7 +100,7 @@ Check also the Privacy and Security definitions of your Firefox installation suc
 
 ## Get a VPN
 
-If you are doing advanced things that might get into trouble ( for example denial of service attacks is considered a crime in most jurisdictions) you will need to install a VPN. Here do your research and pick a payed one and - you guessed it - normally the most secure tend to be the most expensive. Check as many reviews as possible before choosing one.
+If you are doing advanced things that might get into trouble (for example denial of service attacks is considered a crime in most jurisdictions) you will need to install a VPN. Here do your research and pick a payed one and - you guessed it - normally the most secure tend to be the most expensive. Check as many reviews as possible before choosing one.
 
 
 That's it. With this setup we have a minimal hacking setup on a Raspberry Pi. It may take a many hours to get into the final setup that suits your needs but take your time and make sure you do your research. Check also how a VPN compares to TOR. There are VPN providers that allow TOR over VPN.
