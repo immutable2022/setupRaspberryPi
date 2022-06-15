@@ -102,6 +102,9 @@ Check also the Privacy and Security definitions of your Firefox installation suc
 
 If you are doing advanced things that might get into trouble (for example denial of service attacks is considered a crime in most jurisdictions) you will need to install a VPN. Here do your research and pick a payed one and - you guessed it - normally the most secure tend to be the most expensive. Check as many reviews as possible before choosing one.
 
+For a first test with a vpn a good option could be ProtonVPN but bare in mind the free version doesn't allow TOR over VPN. The payed version allows TOR over VPN. A tutorial that works with DietPI is this one: https://protonvpn.com/support/official-linux-vpn-debian/
+
+You may want to research the best VPN for your scenario; this tutorial is here as an example of how to setup a VPN under on DietPI.
 
 That's it. With this setup we have a minimal hacking setup on a Raspberry Pi. It may take a many hours to get into the final setup that suits your needs but take your time and make sure you do your research. Check also how a VPN compares to TOR. There are VPN providers that allow TOR over VPN.
 
