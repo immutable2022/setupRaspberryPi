@@ -24,7 +24,7 @@ https://dietpi.com/docs/software/desktop/#firefox
 
 
 If you are not yet about deep diving into hacking you can simply add a TOR node and leave your RaspberryPi work 24/7 as a TOR node.
-https://dietpi.com/docs/software/distributed_projects/#tor-relay. We don't want to have this installed if we are going to actually perform hacking. For that we want to have only Anonsurf (and a VPN). However if you want your RPi working as TOR node first read this information: https://blog.torproject.org/tips-running-exit-node/
+https://dietpi.com/docs/software/distributed_projects/#tor-relay. We don't want to have this installed if we are going to actually perform hacking. For that we want to have only Anonsurf (and a VPN - check last section of this tutorial). However if you want your RPi working as TOR node first read this information: https://blog.torproject.org/tips-running-exit-node/
 
 In a Raspberry Pi 3b+ this minimal setup works, but of course browsing should be done judisciously otherwise the resources will be depleted and our RPi 3b+ will soon stop responding. In addition we want this to be a minimalistic keeping anonimity as main goal so the less browsing we do the safer we are.
 
@@ -108,9 +108,17 @@ For a first test with a vpn a good option could be ProtonVPN but bare in mind th
 
 You may want to research the best VPN for your scenario; this tutorial is here as an example of how to setup a VPN under on DietPI.
 
-That's it. With this setup we have a minimal hacking setup on a Raspberry Pi. It may take a many hours to get into the final setup that suits your needs but take your time and make sure you do your research. Check also how a VPN compares to TOR. There are VPN providers that allow TOR over VPN.
+IMPORTANT(!): as I went through and installed my VPN I had to remove the Anonsurf startup command!! So go to the Anonsurf section and remove the line "anonsurf start" from the startup script! Most likely your VPN will fail and if you try to have both the VPN and Anonsurf running at the same time you can make your connection highly unreliable and get into trouble. So use either Anosurf or your VPN but never both. If you try to use both spend some time (hours/days) to monitor your connections and see what happens. My VPN was able to connect but after some hours it would drop, and the problem was having Anonsurf starting on boot.
 
-Again be carefull if you are just starting. Don't trust just the TOR network for anonymity. Entry and Exit nodes might still be monitored and although unlikely that's also a possibility. The absolute minimum is to use TOR.
+To use TOR over VPN - the best scenario to start with - get a VPN provider which supports this feature; they will already have servers out of the box with get the VPN traffic routed through TOR network which means your connection will be like this:
+
+  [your network provider] <==> [VPN provider] <==> [TOR network] <==> [Target server]
+  
+So in order for someone to track you back it will be a bit harder since now they have to go through TOR and the VPN network.
+
+That's it. With this setup we have a minimal hacking setup on a Raspberry Pi. It may take a many hours to get into the final setup that suits your needs but take your time and make sure you do your research. Check also how a VPN compares to TOR and choose VPN providers that allow TOR over VPN.
+
+Again be carefull if you are just starting. Don't trust just the TOR network for anonymity. Entry and Exit nodes might still be monitored and although unlikely that's also a possibility. The absolute minimum is to use TOR though and if you setup Anonsurf as described in the respective section it's already a layer of anonymity.
 
 ## Most importantly: be ethical. Apply your hacking skills for the good of societey and don't harm others!!
 
