@@ -49,13 +49,15 @@ Anonsurf comes originally with Parrot OS distribution but there's an available v
 
 https://github.com/Und3rf10w/kali-anonsurf
 
+https://cybernationalsecurity.net/how-to-install-anon-surf-on-kali-linux-step-by-step/
+
 https://www.geeksforgeeks.org/how-to-setup-and-use-anonsurf-on-kali-linux/
 
-What Anonsurf does is route all traffic through TOR network. But TOR is no guarantee of anonymity. Have also a look at the following resource:
+What Anonsurf does is route all traffic through TOR network. However TOR is no guarantee of anonymity. Have also a look at the following resource:
 
 https://restoreprivacy.com/tor/
 
-But having Anonsurf is better than nothing and it's a free tool.
+But having Anonsurf is better than nothing and it's a free tool; it also offers the option to route traffic through i2p instead of TOR.
 
 Anonsurf works also on DietPi. What you get won't be exactly the same as in the screenshots of the above tutorial and you won't get an UI tool to monitor the network status. But you get the command line giving you all that information.
 
