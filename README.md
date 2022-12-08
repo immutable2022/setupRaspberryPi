@@ -2,11 +2,18 @@
 
 Why would we want a hacking minimalistic setup on a Raspberry Pi? Mainly because it's low powered and highly mobile. In addition if used exclusively for hacking purposes then your personal information won't be there. So the purpose of this guide is to provide the absolute minimum and safest environment for hacking. It will not suite every scenario but if it's mainly scripting it should do the job just fine.
 
+This tutorial covers:
+*installation of Dietpi
+*installation of JDK
+*installation of Anonsurf
+*some browser plugins
+*basic considerations for using VPN and TOR.
+
 There are already distributions tailored for RPi such as ParrotOS but require, or work best, in latest RPi 4 versions. RPi 3 or earlier versions are too resource constrained. Therefore for this guide a Raspbery Pi 3b+ was used and the aim is to have an installation providing Desktop UI but which is supposed to work most of the time under Linux shell for script execution.
 
 NOTE: during my setup I had to actually reinstall DietPi a bunch of times to get used to the options, navigation and also the sequence of steps. For example setting up the Network was a bit cumbersome. The most effective way I found was to start with network cable and when everything was ok, switch to Wi-fi.
 
-Also you might want first attempt to try and install Anonsurf before anything else since it's the only "non-standard" application that is required and since it takes control of your network through IP tables etc you might want to check how to install it first. This is indeed the core of this guide. Anonsurf is what will provide the most basic layer of security through TOR navigation.
+Also you might want first attempt to try and install Anonsurf before anything else since it's the only "non-standard" application that is required and since it takes control of your network through iptables etc you might want to check how to install it first. This is indeed the core of this guide. Anonsurf is what will provide the most basic layer of security through TOR navigation.
 
 ## Install DietPi on a clean SD card
 
@@ -106,11 +113,11 @@ Check also the Privacy and Security definitions of your Firefox installation suc
 
 If you are doing advanced things that might get into trouble (for example denial of service attacks is considered a crime in most jurisdictions) you will need to install a VPN. Here do your research and pick a payed one and - you guessed it - normally the most secure tend to be the most expensive. Check as many reviews as possible before choosing one.
 
-For a first test with a vpn a good option could be ProtonVPN but bare in mind the free version doesn't allow TOR over VPN. The payed version allows TOR over VPN. A tutorial that works with DietPI is this one: https://protonvpn.com/support/official-linux-vpn-debian/
+For a first test with a vpn a good option could be ProtonVPN. A tutorial that works with DietPI is this one: https://protonvpn.com/support/official-linux-vpn-debian/
 
 You may want to research the best VPN for your scenario; this tutorial is here as an example of how to setup a VPN under on DietPI.
 
-IMPORTANT(!): as I went through and installed my VPN I had to remove the Anonsurf startup command!! So go to the Anonsurf section and remove the line "anonsurf start" from the startup script! Most likely your VPN will fail and if you try to have both the VPN and Anonsurf running at the same time you can make your connection highly unreliable and get into trouble. So use either Anosurf or your VPN but never both. If you try to use both spend some time (hours/days) to monitor your connections and see what happens. My VPN was able to connect but after some hours it would drop, and the problem was having Anonsurf starting on boot.
+IMPORTANT(!): after several setups and experimentation, I had to setup the VPN on the WiFi router, and leave Anonsurf running on the Raspberry Pi. There are many issues that make it almost impossible to have both VPN and Anonsurf running simultaneously. So the best setup is to install a VPN on your Wifi router and keep Anonsurf running on your Raspberry Pi. Start with a free account on ProtonVPN to have a first impression on how this works.
 
 To use TOR over VPN - the best scenario to start with - get a VPN provider which supports this feature; they will already have servers out of the box with get the VPN traffic routed through TOR network which means your connection will be like this:
 
@@ -120,7 +127,7 @@ So in order for someone to track you back it will be a bit harder since now they
 
 That's it. With this setup we have a minimal hacking setup on a Raspberry Pi. It may take a many hours to get into the final setup that suits your needs but take your time and make sure you do your research. Check also how a VPN compares to TOR and choose VPN providers that allow TOR over VPN.
 
-Again be carefull if you are just starting. Don't trust just the TOR network for anonymity. Entry and Exit nodes might still be monitored and although unlikely that's also a possibility. The absolute minimum is to use TOR though and if you setup Anonsurf as described in the respective section it's already a layer of anonymity.
+Again be carefull if you are just starting. Don't trust just the TOR network for anonymity. Entry and Exit nodes might still be monitored. The absolute minimum is to use TOR though and if you setup Anonsurf as described in the respective section it's already a layer of anonymity.
 
 ## Most importantly: be ethical. Apply your hacking skills for the good of societey and don't harm others!!
 
