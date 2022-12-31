@@ -55,6 +55,22 @@ java -version
 
 that should get you going with Java so you can write a piece of code and leave it running 24/7 with low power consumption.
 
+## iptables - make sure it's installed
+
+After some attempts reinstalling dietpi to test this tutorial I came up in a situation where I didn't have iptables installed. Which means that running anonsurf on the shell we see the script "doing things" but returning some errors related to iptables not found. If that happens simply install it or reinstall it:
+
+sudo apt-get install iptables
+
+or 
+
+sudo apt-get --reinstall install iptables
+
+or
+
+sudo apt-get install iptables-persistent
+
+at the end of this tutorial if you do "anonsurf myip" you need to see an IP address that is not your router IP address nor a local IP address. To confirm everything is ok, take the IP address and put it on the browser and you should have a simple webpage saying your in a TOR node.
+
 
 ## Get Anonsurf
 
