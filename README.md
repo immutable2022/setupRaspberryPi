@@ -57,6 +57,8 @@ that should get you going with Java so you can write a piece of code and leave i
 
 ## iptables - make sure it's installed
 
+Before installing anonsurf, install iptables.
+
 After some attempts reinstalling dietpi to test this tutorial I came up in a situation where I didn't have iptables installed. Which means that running anonsurf on the shell we see the script "doing things" but returning some errors related to iptables not found. If that happens simply install it or reinstall it:
 
 sudo apt-get install iptables
@@ -100,7 +102,7 @@ anonsurf start
 
 You can also do this by following the steps on the Mate Desktop - if you don't know, you have to start dietpi as root and on the command line enter the command "startx" to bring Mate Desktop. You have to use the root user so that startx works correctly. Then you can get to the start script:
 
-Applications -> System Tools -> DietPi-Config -> AutoStart Options -> Custom script (background, no autologin)
+Applications -> System Tools -> DietPi-Config -> AutoStart Options -> Custom script (foreground, with autologin)
 
 There you will be able to edit the custom.sh file
 
@@ -135,7 +137,7 @@ Check also the Privacy and Security definitions of your Firefox installation suc
 
 If you are doing advanced things that might get into trouble (for example denial of service attacks is considered a crime in most jurisdictions) you will need to install a VPN. Here do your research and pick a payed one and - you guessed it - normally the most secure tend to be the most expensive. Check as many reviews as possible before choosing one.
 
-For a first test with a vpn a good option could be ProtonVPN. A tutorial that works with DietPI is this one: https://protonvpn.com/support/official-linux-vpn-debian/
+For a first test with a vpn a good option could be ProtonVPN; however carefully consider another VPN provider. ProtonVPN is easy to setup and free but make sure you do your research before selecting a permanent VPN provider. A tutorial that works with DietPI is this one: https://protonvpn.com/support/official-linux-vpn-debian/
 
 You may want to research the best VPN for your scenario; this tutorial is here as an example of how to setup a VPN under on DietPI.
 
