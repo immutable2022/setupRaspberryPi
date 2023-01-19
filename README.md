@@ -137,11 +137,7 @@ Check also the Privacy and Security definitions of your Firefox installation suc
 
 If you are doing advanced things that might get into trouble (for example denial of service attacks is considered a crime in most jurisdictions) you will need to install a VPN. Here do your research and pick a payed one and - you guessed it - normally the most secure tend to be the most expensive. Check as many reviews as possible before choosing one.
 
-For a first test with a vpn a good option could be ProtonVPN; however carefully consider another VPN provider. ProtonVPN is easy to setup and free but make sure you do your research before selecting a permanent VPN provider. A tutorial that works with DietPI is this one: https://protonvpn.com/support/official-linux-vpn-debian/
-
-You may want to research the best VPN for your scenario; this tutorial is here as an example of how to setup a VPN under on DietPI.
-
-IMPORTANT(!): after several setups and experimentation, I had to setup the VPN on the WiFi router, and leave Anonsurf running on the Raspberry Pi. There are many issues that make it almost impossible to have both VPN and Anonsurf running simultaneously probably because VPN and Anonsurf both require changes in iptables, but also specific IPv6 filtering on the VPN client. So the best setup is to install a VPN on your Wifi router and keep Anonsurf running on your Raspberry Pi. Start with a free account on ProtonVPN to have a first impression on how this works.
+IMPORTANT(!): after several setups and experimentation, I had to setup the VPN on the WiFi router, and leave Anonsurf running on the Raspberry Pi. There are many issues that make it almost impossible to have both VPN and Anonsurf running simultaneously probably because VPN and Anonsurf both require changes in iptables, but also specific IPv6 filtering on the VPN client. So the best setup is to install a VPN on your Wifi router and keep Anonsurf running on your Raspberry Pi.
 
 To use TOR over VPN - the best scenario to start with - get a VPN provider which supports this feature; they will already have servers out of the box with get the VPN traffic routed through TOR network which means your connection will be like this:
 
